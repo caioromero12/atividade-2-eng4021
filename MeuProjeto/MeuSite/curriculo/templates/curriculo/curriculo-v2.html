@@ -1,0 +1,148 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Astronauta Spiff v2</title>
+    <link rel="stylesheet" href="{% static 'curriculo/css/curriculo-v2.css' %}">
+</head>
+<body>
+    <nav class="navegacao">
+        <h2>Menu Estelar</h2>
+        <ul>
+            <li><a href="http://www.puc-rio.br">PUC-Rio</a></li>
+            <li><a href="resumo.html">Resumo</a></li>
+            <li>Habilidades</li>
+            <li>Educação</li>
+            <li>Idiomas</li>
+            <li>Versão 2</li>
+            <li><a href="meu-curriculo.html">Meu currículo</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Astronauta Spiff</h1>
+        <img src="{% static 'curriculo/img/spiff.jpg' %}" alt="Foto do astronauta Spiff">
+
+        <h2>Resumo</h2>
+        <p>
+            Astronauta Spiff<br>
+            Profissão: Astronauta Intergalático, Explorador de Mundos Desconhecidos<br>
+            Base Principal: Quarto Secreto, Subúrbio da Terra, Sistema Solar<br>
+            Comunicações (ocasionalmente interceptadas): (55) 21 99999-Spiff<br>
+            Email Secreto: spiff.the.explorer@galaxymail.com (altamente criptografado)<br>
+        </p>
+
+        <p>
+            Um intrépido e imaginativo astronauta com vasta experiência em exploração espacial solo e em missões críticas a planetas inóspitos. Proficiente em pilotagem de naves espaciais de construção própria, análise de fenômenos alienígenas e resolução criativa de problemas em ambientes extraterrestres. Possui um histórico comprovado de descobertas notáveis e encontros (nem sempre amigáveis) com formas de vida alienígenas diversas.
+        </p>
+
+        <section id="experienciaprofissional">
+            <h2>Experiência Profissional</h2>
+            <h3>Astronauta Intergalático e Comandante de Missão Solo</h3>
+            <p>
+                Várias Expedições (Contínuo)<br><br>
+                Pilotou e manteve diversas naves espaciais de design exclusivo, incluindo a "Destruidora de Cartazes" e a "Vingadora de Júpiter".<br>
+                Realizou pesquisas em planetas desconhecidos, catalogando flora, fauna e geologia exóticas.<br>
+                Desenvolveu protocolos de comunicação rudimentares com espécies alienígenas.<br>
+                Sobreviveu a condições ambientais extremas, incluindo tempestades de glitter cósmico.<br>
+                Documentou descobertas científicas inovadoras.<br>
+                Explorou e mapeou planetas inexplorados.<br>
+                Vice-campeão intergalático de cara-coroa.
+            </p>
+        </section>
+
+        <section id="habilidadestécnicasespaciais">
+            <h2>Habilidades Técnicas Espaciais</h2>
+            <ul>
+                <li>Acrobacias em gravidade zero</li>
+                <li>Comunicação interespécies</li>
+                <li>Construção de bases lunares improvisadas</li>
+                <li>Voo solo de espaçonaves</li>
+                <li>Negociação com espécies extraterrestres</li>
+                <li>Pilotagem de espaçonaves não convencionais</li>
+                <li>Navegação interestelar intuitiva</li>
+                <li>Reparos de emergência em gravidade zero</li>
+            </ul>
+        </section>
+
+        <section id="habilidadespessoais">
+            <h2>Habilidades Pessoais</h2>
+            <p>
+                Imaginação hiperativa<br>
+                Pensamento criativo e resolução de problemas não convencionais<br>
+                Determinação inabalável<br>
+                Adaptabilidade a situações inesperadas<br>
+                Autoconfiança (às vezes excessiva)<br>
+                Habilidade de argumentação persuasiva<br>
+            </p>
+        </section>
+
+        <section id="educacao">
+            <h2>Educação (Auto-Didata e Experiencial)</h2>
+            <ol>
+                <li>Doutorado em Exploração Interdimensional</li>
+                <li>Mestrado em Viagem Hiperespacial</li>
+                <li>Universidade Estelar de Calvin</li>
+                <li>Academia Estelar de Calvin</li>
+                <li>Estudos avançados em:</li>
+                <ul>
+                    <li>Teoria da Propulsão a Jato de Papelão</li>
+                    <li>Linguística Alienígena Intuitiva</li>
+                    <li>Astronomia de Quintal Avançada</li>
+                </ul>
+            </ol>
+        </section>
+
+        <section id="idiomas">
+            <h2>Idiomas</h2>
+            <p>
+                Terráqueo<br>
+                Glurpiano<br>
+                Dialetos de Saturno<br>
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ENG4021</th>
+                        <th>ENG4020</th>
+                        <th>MAT4161</th>
+                        <th>FIS4001</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Projeto Integrado Software</td>
+                        <td>Projeto Integrado Materiais</td>
+                        <td>Cálculo I</td>
+                        <td>Física I</td>
+                    </tr>
+                    <tr>
+                        <td>2025.2</td>
+                        <td>2025.2</td>
+                        <td>2025.2</td>
+                        <td>2025.2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Alexandre Meslin</td>
+                        <td>Marcello Congro</td>
+                        <td>Débora</td>
+                        <td>Ana Maria</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>"Nenhum alienígena fica para trás... porque eu desintegro todos!"</p>
+    </footer>
+</body>
+</html>
+
+
