@@ -1,118 +1,93 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #000000;
     font-family: 'Orbitron', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
+nav {
+    background-color: blue;
+    min-width: 200px;   /* Largura fixa para o nav */
+    overflow-y: auto;   /* Rolagem vertical se o conteúdo ultrapassar */
+    position: fixed;    /* Fixa o nav na posição */
+    height: 100%;       /* Ocupa toda a altura da viewport - importante ao usar fixed */
+    top: 0;             /* Alinha ao topo */
+    left: 0;            /* Alinha à esquerda */
+}
+
+main {
+    flex-grow: 1;       /* Ocupa o espaço restante */
+    padding: 20px;
+    margin-left: 200px; /* Espaço para o nav depois de usar fixed */
+}
+
+footer {
+    flex-grow: 1;       /* Ocupa o espaço restante */
+    color: orange;
+}
 
 .navegacao {
-    list-style-type: none;
-    background-color: blue;
-    padding: 10px;
-    text-align: center;
-}
-
-.navegacao ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.navegacao li {
-    margin: 5px 10px;
+    list-style-type: none; /* Remove os bullets */
 }
 
 .navegacao a {
-    text-decoration: none;
+    text-decoration: none;  /* Remove o sublinhado */
     color: yellow;
-    font-weight: bold;
 }
 
-h1, h2, h3 {
+h1 {
+    color: yellow;
+    margin-left: 10px;
+}
+
+h2 {
+    color: yellow;
+    margin-left: 10px;
+}
+
+h3 {
     color: yellow;
     margin-left: 10px;
 }
 
 p {
-    margin: 10px;
-    color: white;
+    color: #FFFFFF;
+    margin-left: 10px;
 }
 
-th, td {
-    border: 1px solid white;
-    color: white;
-    padding: 5px;
-    text-align: center;
+#sumario {
+    color: #FFFFFF;
+    margin-left: 10px;
 }
 
-table {
-    border-collapse: collapse;
-    width: 90%;
-    margin: 10px auto;
+li {
+    color: #FFFFFF;
 }
 
-footer {
-    color: orange;
-    text-align: center;
-    padding: 20px;
+.container {
+    display: flex;      /* Usa Flexbox */
+    min-height: 100vh;  /* Ocupa toda a altura da viewport */
 }
 
-img { 
-    display: block;
-    margin: 10px auto;
-    width: 220px;
-    height: auto;
-    border-radius: 10px;
-}
-
-
-@media (max-width: 900px) {
-    h1 {
-        text-align: center;
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha em telas menores */
     }
 
-    .navegacao ul {
-        flex-direction: column;
-        align-items: center;
+    nav {
+        width: 100%; /* Ocupa toda a largura */
+        position: unset;
+        margin-left: 0px;
     }
 
-    img {
-        width: 60%;
-        max-width: 300px;
+    main {
+        margin-left: unset; /* Espaço para o nav depois de usar fixed */
     }
 
-    table {
-        font-size: 0.9em;
+    .navegacao li {
+        display: inline;
     }
 
-    th, td {
-        padding: 3px;
-    }
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    .navegacao h2 {
-        font-size: 1.2em;
-    }
-
-    img {
-        width: 80%;
-    }
-
-    table {
-        width: 100%;
-        font-size: 0.8em;
-    }
-
-    th, td {
-        padding: 2px;
+    .navegacao {
+        text-align: right;
     }
 }
