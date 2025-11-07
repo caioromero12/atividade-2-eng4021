@@ -35,8 +35,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://shiny-enigma-7v44vx97xpvx2r4r7-8000.app.github.dev",
-    "https://localhost:8080",  # adicione esta linha
-    "http://localhost:8080",   # adicione esta linha também
+    "https://localhost:8000",  # adicione esta linha
+    "http://localhost:8000",   # adicione esta linha também
 ]
 
 # Application definition
