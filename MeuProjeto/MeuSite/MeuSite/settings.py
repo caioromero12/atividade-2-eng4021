@@ -28,6 +28,16 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://0.0.0.0:8000',
+    'https://localhost:8000',
+    'http://0.0.0.0:8000',
+]
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -128,3 +138,6 @@ LOGIN_URL = '/accounts/login/'       # URL de login (padrão)
 # ATENÇÃO!!! Troque o valor da variável abaixo para que ela seja uma das rotas
 # válidas no seu arquivo MeuSite/curriculo/urls.py
 LOGIN_REDIRECT_URL = '/curriculo/spiff/'   # Para onde vai após login
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+

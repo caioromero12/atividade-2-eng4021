@@ -17,6 +17,7 @@
     <h2>Área de controle de acesso</h2>
     <ul>
         <li><a href="{% url 'login' %}">Login</a></li>
+        <a href="{% url 'password_change' %}">Trocar senha (somente para usuários logados)</a>
         <li><form method='POST' action="{% url 'logout' %}">{% csrf_token %}<button type='submit'>Logout</button></form></li>
     </ul>
 </body>
